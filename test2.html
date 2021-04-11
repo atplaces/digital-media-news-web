@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #E3D3F4;
+}
+
+.header h1 {
+  font-size: 60px;
+  color: #57119D;
+}
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #BAF2C2;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>News Of The Week!</h1>
+  <p style="font-size: 25px; color: #F30B0B"><i>!Hot News of April 2021!</i></p>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2><i>Playstation Mobile Games?</i></h2>
+      <h5>By J. Fingas <br> 
+      April 10th, 2021</h5>
+      <img src="https://www.getdigital.co.uk/web/getdigital/gfx/productsMore/__generated__resized/1100x1100/14616PS_icons_lit.jpg" width="300" height="300">
+      <p style="font-size: 20px;">The company is hiring someone to lead its mobile gaming push!</p>
+      <p>Sony hasn't done much with PlayStation game franchises unless you count one-offs like Uncharted: Fortune Hunter, but that might change soon. Eurogamer has noticed that Sony is hiring an executive at PlayStation Studios that would focus on bringing PlayStation's "most popular franchises" to mobile. While the listing unsurprisingly doesn't mention titles or timeframes, the new Head of Mobile would develop a three- to five-year strategy. <br>
+
+<br>The company has a long history of trying to meld the PlayStation brand with phones, albeit without much success. Aside from a small number of games, Sony's best-known effort is the Xperia Play — a "PlayStation phone" that was ahead of its time (witness gaming phones like the ROG Phone 5) but a commercial flop. The PlayStation Mobile name is better-associated with PC ports like Horizon Zero Dawn.<br>
+
+<br>It's not hard to see why Sony would pursue mobile. It could bring the PlayStation brand to a much wider audience and, of course, reap profits from in-app purchases. Titles like Fortnite, PUBG and Roblox owe a large amount of their success to mobile gamers. The challenge, of course, is executing on that strategy. The games themselves have to adapt to mobile without losing what makes them special on your console. They might not succeed if they feel like watered-down ports or cash-ins.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2><i>About Me</i></h2>
+      <div class="fakeimg" style="height:100px;">On this webiste you can find<br> 
+        all the trending news all<br> 
+      over the world.<br>
+    Feel free to browser.</div>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg"><p>Prince Philip dead!</p></div>
+      <div class="fakeimg"><p>Lockdown continues....</p></div>
+      <div class="fakeimg"><p>First Edition Superman comic?</p></div>
+    </div>
+    <div class="card">
+      <h3><i>Follow Me On</i></h3>
+      <a href="https://www.instagram.com/kimkardashian/" target="_blank" title="this is a prank!">Instagram</a>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2 style="color: #0CAD24">f2020</h2>
+</div>
+
+</body>
+</html>
+
